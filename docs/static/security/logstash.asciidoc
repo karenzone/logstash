@@ -1,9 +1,9 @@
 [role="xpack"]
 [[ls-security]]
-=== Configuring Security in Logstash
+=== Security
 [subs="attributes"]
 ++++
-<titleabbrev>Configuring Security</titleabbrev>
+<titleabbrev>Security</titleabbrev>
 ++++
 
 The Logstash {es} plugins ({logstash-ref}/plugins-outputs-elasticsearch.html[output],
