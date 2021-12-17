@@ -1,6 +1,6 @@
 [role="xpack"]
 [[ls-security]]
-=== Security
+=== {ls} Security
 [subs="attributes"]
 ++++
 <titleabbrev>Security</titleabbrev>
