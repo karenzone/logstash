@@ -1,0 +1,52 @@
+[[configuration-file-structure]]
+=== Structure of a config file
+
+A Logstash config file has a separate section for each type of plugin you want to add to the event processing pipeline. For example:
+
+[source,js]
+----------------------------------
+# This is a comment. You should use comments to describe
+# parts of your configuration.
+input {
+  ...
+}
+
+filter {
+  ...
+}
+
+output {
+  ...
+}
+----------------------------------
+
+Each section contains the configuration options for one or more plugins. If you specify
+multiple filters, they are applied in the order of their appearance in the configuration file.
+
+[discrete]
+[[plugin_configuration]]
+=== Plugin configuration
+
+The configuration of a plugin consists of the plugin name followed
+by a block of settings for that plugin. For example, this input section configures two file inputs:
+
+[source,js]
+----------------------------------
+input {
+  file {
+    path => "/var/log/messages"
+    type => "syslog"
+  }
+
+  file {
+    path => "/var/log/apache/access.log"
+    type => "apache"
+  }
+}
+----------------------------------
+
+In this example, two settings are configured for each of the file inputs: 'path' and 'type'.
+
+The settings you can configure vary according to the plugin type. For information about each plugin, see <<input-plugins,Input Plugins>>, <<output-plugins, Output Plugins>>, <<filter-plugins,Filter Plugins>>, and <<codec-plugins,Codec Plugins>>.
+
+

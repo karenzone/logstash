@@ -106,6 +106,21 @@ include::static/upgrading.asciidoc[]
 include::static/configuration.asciidoc[]
 
 :edit_url!:
+include::static/config-structure.asciidoc[]
+
+:edit_url!:
+include::static/config-valuetypes.asciidoc[]
+
+:edit_url!:
+include::static/config-event-data.asciidoc[]
+
+:edit_url!:
+include::static/config-envvars.asciidoc[]
+
+:edit_url!:
+include::static/config-exps.asciidoc[]
+
+:edit_url!:
 include::static/ls-to-cloud.asciidoc[]
 
 // Security
