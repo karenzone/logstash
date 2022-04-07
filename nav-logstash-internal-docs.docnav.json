@@ -1,0 +1,34 @@
+{
+  "mission": "Logstash internal docs",
+  "id": "logstashTeam",
+  "landingPageId": "logstashTeam",
+  "icon": "logstash",
+  "description": "Logstash team documentation",
+  "items": [
+    {
+      "label": "Home",
+      "items": [
+        { "id": "logstashTeam" },
+        { "id": "teamOnboarding" }
+      ]
+    },
+    {
+      "label": "Scripts and other resources",
+      "items": [
+        { "id": "lsScripts" }
+      ]
+    },
+    {
+      "label": "Plugins",
+      "items": [
+        { "id": "pluginDev" }
+      ]
+    },
+    {
+      "label": "Videos",
+      "items": [
+        { "id": "videoRecordings" }
+      ]
+    }
+  ]
+}

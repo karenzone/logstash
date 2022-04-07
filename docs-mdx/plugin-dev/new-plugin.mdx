@@ -1,0 +1,39 @@
+---
+id: teamOnboarding
+slug: /logstash-team/plugin-dev/new
+title: New plugin
+image: https://source.unsplash.com/400x175/?Nature
+date: 2022-04-07
+tags: ['logstash','internal docs']
+---
+
+NOTE: This content is for demo purposes only. 
+Source of truth is https://github.com/elastic/ingest-dev/blob/main/logstash/new_logstash_plugin_checklist.md
+
+### New plugin development
+
+When a new plugin repo is created under https://github.com/logstash-plugins, maintainers should...
+
+* [ ] Add Elastic CLA checker hooks
+   * Go to https://clachecker.elastic.co/
+   * Click _Add hooks to repository_
+   * Enter "https://github.com/logstash-plugins/<new-repo-name&gt;"
+   * Click _Add_
+   * Verify that two hooks were added at https://github.com/logstash-plugins/<new-repo-name&gt;/settings/hooks
+   
+* [ ] Add TravisCI integration
+   * Go to https://travis-ci.org/profile/logstash-plugins
+   * Click _Sync account_
+   * Filter repositories so you can easily find the new one
+   * Toggle the button so it shows the check/tick symbol
+   * Verify that one integration was added at https://github.com/logstash-plugins/<new-repo-name&gt;/settings/installations
+   
+* [ ] Trigger build in TravisCI
+   * Go to https://travis-ci.org/logstash-plugins/<new-repo-name&gt;
+   * Click _More Options_ > _Trigger Build_
+
+* [ ] Give Employees and Jenkins Push collaborators
+   * Go to https://github.com/logstash-plugins/<new-repo-name&gt;/settings/collaboration
+   * Click _Add a team: Select team_
+   * Add the Employees team and give it Admin permissions
+   * Add the Jenkins team and give it Write permissions

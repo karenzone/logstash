@@ -1,0 +1,139 @@
+---
+id: teamOnboarding
+slug: /logstash-team/docs/onboarding
+title: Onboarding
+image: https://source.unsplash.com/400x175/?Nature
+date: 2022-04-07
+tags: ['logstash','internal docs']
+---
+
+NOTE: This content is for demo purposes only. 
+Source of truth is https://github.com/elastic/ingest-dev/blob/main/logstash/onboarding.md
+
+
+- [Introduction](#introduction)
+- [Team Members](#team-members)
+- [Mentorship](#mentorship)
+  * [Mentor Responsibilities](#mentor-responsibilities)
+  * [Mentee Responsibilities](#mentee-responsibilities)
+- [Meetings](#meetings)
+  * [Team meetings](#team-meetings)
+  * [Engineering wide meetings](#engineering-wide-meetings)
+  * [Company-wide meetings](#company-wide-meetings)
+- [First Week](#first-week)
+- [Second week and after](#second-week-and-after)
+- [Dev Priorities](#dev-priorities)
+- [Cheat Sheet](#cheat-sheet)
+- [Communication tools](#communication-tools)
+- [Cloud Access](#cloud-access)
+
+<!-- toc -->
+## Introduction
+
+Congratulations and welcome to the Logstash team! We are thrilled to have you here at Elastic!
+
+This document should help you get started for the first couple of weeks. If you have any questions about this document, feel free to ask your mentor or team lead. Feel free to make any edits to this document as you work through it.
+
+## Team Members
+
+* Andres Rodriguez (Miami, FL), GH: @roaksoax, Slack: @andreserl (Team Lead)
+* Alvin Chen (Mountain View, USA) @alvin (Product Manager)
+* João Duarte (Lisbon, Portugal) @joao (Technical Lead)
+* Karen Metts (Atlanta, GA), @karen.metts (Technical Writer)
+* Colin Surprenant (Montreal, Canada) @colin
+* Rob Bavey (Boston, USA), @rob.bavey
+* Ry Biesemeyer (Seattle, WA), @yauuie
+* Andrea Selva (Trento, Italy), @andsel
+* Karol Bucek (Prague, Czech Republic), @karol.bucek
+* Kaise Cheng (Berlin, Germany), @kaisecheng
+
+
+You can find our extended team and other teams info on [Pingboard](https://elastic.pingboard.com).
+
+## Mentorship
+
+Every new employee at Elastic is assigned a mentor during their first week. The mentor-mentee relationship is designed to get you off on the right foot and give you someone to turn to when you have questions.
+
+### Mentor Responsibilities
+
+* Be a buddy. Be open to questions from the person you are mentoring.
+* Set Goals - Provide reasonable and measurable tasks and goals.
+* Provide Feedback - Assess progress against the provided goals, and provide feedback regularly. Weekly feedback is appropriate.
+* Be Involved - Mentors should be high touch for the first few weeks. 2 - 3 meetings per week of 10 - 30 mins each are appropriate. Mentors / mentees can adjust this as they feel appropriate.
+
+### Mentee Responsibilities
+
+* Take Initiative - Actively take on tasks outside your comfort zone. This is how we learn and grow.
+* Be Prepared - Show up to each meeting with your mentor with a list of things to discuss.
+* Provide Feedback - If something isn't working, speak up. Ideally, mentees will provide weekly feedback to their mentor or Team Lead about how the process is working.
+
+## Meetings
+
+**Note:** Most meetings are open to everyone at Elastic. Such meetings are advertised on the Google dev calendar. If it is on the dev calendar you are free to attend these meetings.
+
+### Team meetings
+
+* Weekly Sync including PM (Monday, 8:30 pm PST, 3:30 pm UTC) https://elastic.zoom.us/j/462146605. Here we discuss release schedule, on-going issues, customer escalations, new feature demos etc using an [agenda doc](https://docs.google.com/document/d/1cjePRM--4ndG5zozkK0IG4Y4swHzXOes1mxcLtbgd0I/edit)
+
+### Engineering wide meetings
+
+* Every two weeks, there are demo meetings where people show new features, talk design and such. Sometimes we invite external speakers to demo/talk about interesting, but related topics.
+
+**Recordings of Past Standups:**
+https://drive.google.com/drive/u/0/folders/1I3cXkOFmuVZRcNJ6menIa4JFVmDRFtgT
+
+### Company-wide meetings
+
+* Every 3-4 weeks on a Wednesday the CEO will host a company-wide meeting with a set agenda. These meetings provide information about our company strategy, decisions, and roadmap.
+
+## First Week
+
+* Get familiaried with the communication tools used in our company and team.
+* Set up your development environment and [build](https://github.com/elastic/logstash#developing-logstash-core) Logstash core.
+* [IntelliJ](https://www.jetbrains.com/idea/) instructions here: https://docs.google.com/a/elastic.co/document/d/1kqunARvYMrlfTEOgMpYHig0U-ZqCcMJfhvTtGt09iZg/edit?usp=sharing (feel free to edit as needed)
+* Learn about our products. Enroll ASAP for an in-person [training](https://training.elastic.co/) of our products by emailing training@elastic.co. Pick a city near you to reduce costs. Suggested courses: Elasticsearch I and Kibana Data Analyst.
+* Run Logstash and ingest data from a bunch of resources. Read the product's [getting started](https://www.elastic.co/guide/en/logstash/current/getting-started-with-logstash.html) docs.
+* Check with your team lead when your x-school is starting. x-school is a quarterly in-person, onboarding program held in Mountain View.
+* Read the general, company-wide, onboarding [documents](https://wiki.elastic.co/display/DEV/New+Hire+Basecamp)
+
+## Second week and after
+
+* Get bug(s) assigned to you from your mentor. This will help you understand our testing and code review process.
+* Talk about your first project with your mentor and team lead. Note to mentors: this should be a 2-3 week project with clearly defined outcomes.
+
+## Dev Priorities
+
+Read [CONTRIBUTING.md](https://github.com/elastic/logstash/blob/master/CONTRIBUTING.md)
+
+How do you know what to work on? We have a [planning github project](https://github.com/orgs/elastic/projects/105?fullscreen=true)! Initially, you can get started with bugs and low-hanging fruits, but here's a very rough guideline in this order:
+
+1. Support: Sev1s are drop-everything-and-help situations, especially if you are around, know the code and can help. Please work with the support owner to help resolve Sev1s. You can drop a note in Slack that you are looking into it and won't tend to other work stuff.
+2. Test Failures/Build stuff: If a build is broken, it is high priority and we need to fix it. This is on the same level as a sev1. A broken build blocks developers and removes our ability to release any time.
+3. Security issues: If you are asked to handle a security issue, please prioritize it over others
+4. Code reviews and feature work: Balance code reviews with your own feature work. Please don't stall code reviews for a long time. It is expensive for our team. Stale PRs become un-mergeable, need more time as they age and generally reduces the morale of the PR creator. Review and LGTM it or close it.
+5. Answer questions on Slack, Discuss, GH, IRC: Please make sure to periodically answer questions on any of these mediums if you know the answer. Devs usually pick one of those, you don't have to be active on all channels of communication.
+
+
+## Cheat Sheet
+----------------------------------------------------
+You can find a resource cheat sheet [here](https://github.com/elastic/ingest-dev/blob/main/logstash/README.md)
+
+
+---------------------------------------------------------------------------
+
+## Communication tools
+
+* Slack: Most of our day-day communications happen over Slack. The Logstash team members hang out in Slack #ingest, #logstash, #logstash-builds and #logstash-github channels. If you have any questions, feel free to ask them on Slack. People are super friendly here. More info on Slack etiquettes can be found [here](https://wiki.elastic.co/display/DEV/Slack+and+Important+Rooms).
+* GitHub: Every product in Elastic stack uses GitHub as source code repository. It's all under the Elastic org. We also use GitHub issues feature extensively to discuss design proposals, track blogs, release plans and so on.
+* Email: Important things should be discussed by email, not on Zoom or Slack. We send a lot of emails.
+
+
+
+----------------------------------------------------------------------------
+
+## Cloud Access
+
+* Use GCP. You should already have access to your team's sandbox by visiting the [console](https://console.cloud.google.com/cloud-resource-manager?previousPage=%2F%3Fpli%3D1&pli=1).
+* If you absolutely must use AWS, which we discourage because it a) costs more money both in dollars and eng time, b) is a security nightmare, and c) gives our competitor more money, then open an Infra issue to get access. Please note the instructions to provide your email address and team. That info is not always clear from the GitHub username.
+
+
