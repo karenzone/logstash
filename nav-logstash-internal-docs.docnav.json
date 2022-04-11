@@ -2,7 +2,7 @@
   "mission": "Logstash internal docs",
   "id": "logstashTeam",
   "landingPageId": "logstashTeam",
-  "icon": "logstash",
+  "icon": "machineLearningApp",
   "description": "Logstash team documentation",
   "items": [
     {
@@ -19,6 +19,12 @@
       ]
     },
     {
+      "label": "Docs",
+      "items": [
+        { "id": "docsHowTo" }
+      ]
+    },
+    {
       "label": "Plugins",
       "items": [
         { "id": "pluginDev" }
@@ -27,6 +33,7 @@
     {
       "label": "Videos",
       "items": [
+        { "id": "videoKnowledgeShare" },
         { "id": "videoRecordings" }
       ]
     }
