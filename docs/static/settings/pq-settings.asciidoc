@@ -2,11 +2,26 @@
  
 NOTE: These settings apply only if `queue.type: persisted`.
  
-{pathqueue}:: {pathqueue-desc} {lsyml}
+{pathqueue}::
++
+--
+include::{log-repo-dir}/include/attributes-ls.asciidoc[tag=pathqueue-desc]
+include::{log-repo-dir}/include/attributes-ls.asciidoc[tag=lsyml]
+--
 
-{queuepage_capacity}:: {queuepage_capacity-desc} {bothyml}
+{queuepage_capacity}::
++
+--
+include::{log-repo-dir}/include/attributes-ls.asciidoc[tag=queuepage_capacity-desc]
+include::{log-repo-dir}/include/attributes-ls.asciidoc[tag=bothyml]
+--
 
-{queuedrain}:: {queuedrain-desc} {lsyml}
+{queuedrain}::
++
+--
+include::{log-repo-dir}/include/attributes-ls.asciidoc[tag=queuedrain-desc]
+include::{log-repo-dir}/include/attributes-ls.asciidoc[tag=lsyml]
+--
 
 {queuemaxevents}:: {queuemaxevents-desc} {bothyml}
 
